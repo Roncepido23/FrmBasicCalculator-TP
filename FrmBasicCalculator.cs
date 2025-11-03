@@ -48,11 +48,11 @@ namespace BasicCalculator
                         result = BasicComputation.Subtraction(num1, num2).ToString();
                         break;
 
-                    case "*":
+                    case"/":
                         result = BasicComputation.Division(num1, num2).ToString();
                         break;
 
-                    case "/":
+                    case "*":
                         result = BasicComputation.Multiplication(num1, num2).ToString();
                         break;
 
