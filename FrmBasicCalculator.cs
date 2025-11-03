@@ -31,37 +31,44 @@ namespace BasicCalculator
         {
             try
             {
-                var num1 = Convert.ToInt32(tbInput1.Text);
-                var num2 = Convert.ToInt32(tbInput2.Text);
-                var operation = cbOperation.SelectedItem.ToString();
-                var result = "None";
+                int num1 = Convert.ToInt32(tbInput1.Text);
+                int num2 = Convert.ToInt32(tbInput2.Text);
+                string operation = cbOperation.SelectedItem.ToString();
+                string result = "None";
 
-                Console.WriteLine(operation);
+                Console.WriteLine($"Current operation: {operation}");
 
                 switch (operation)
                 {
                     case "+":
-                        result = Convert.ToString(BasicComputation.Addition(num1, num2));
+                        result = BasicComputation.Addition(num1, num2).ToString();
                         break;
+
                     case "-":
-                        result = Convert.ToString(BasicComputation.Subtraction(num1, num2));
+                        result = BasicComputation.Subtraction(num1, num2).ToString();
                         break;
+
                     case "*":
-                        result = Convert.ToString(BasicComputation.Division(num1, num2));
+                        result = BasicComputation.Division(num1, num2).ToString();
                         break;
+
                     case "/":
-                        result = Convert.ToString(BasicComputation.Multiplication(num1, num2));
+                        result = BasicComputation.Multiplication(num1, num2).ToString();
+                        break;
+
+                    default:
+                        result = "Invalid operation selected.";
                         break;
                 }
-
-                MessageBox.Show($"Result: {result}");
-
-                rtbTotal.Text = "Total: \n" + result;
+ 
+                MessageBox.Show("Result: " + result);
+                rtbTotal.Text = $"Total:\n{result}";
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show("Error occurred: " + ex.Message);
             }
+
         }
     }
 }
