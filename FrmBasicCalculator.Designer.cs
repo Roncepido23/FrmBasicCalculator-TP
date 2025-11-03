@@ -39,11 +39,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Impact", 30F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(59, 24);
+            this.label1.Location = new System.Drawing.Point(124, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(370, 55);
+            this.label1.Size = new System.Drawing.Size(290, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Basic Calculator";
             // 
@@ -59,7 +59,7 @@
             // tbInput2
             // 
             this.tbInput2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbInput2.Location = new System.Drawing.Point(22, 243);
+            this.tbInput2.Location = new System.Drawing.Point(12, 290);
             this.tbInput2.Name = "tbInput2";
             this.tbInput2.Size = new System.Drawing.Size(430, 44);
             this.tbInput2.TabIndex = 2;
@@ -69,20 +69,20 @@
             // 
             this.cbOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOperation.FormattingEnabled = true;
-            this.cbOperation.Location = new System.Drawing.Point(168, 171);
+            this.cbOperation.Location = new System.Drawing.Point(22, 190);
             this.cbOperation.Name = "cbOperation";
-            this.cbOperation.Size = new System.Drawing.Size(140, 45);
+            this.cbOperation.Size = new System.Drawing.Size(99, 45);
             this.cbOperation.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Impact", 15F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(156, 433);
+            this.button1.Location = new System.Drawing.Point(344, 425);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 46);
+            this.button1.Size = new System.Drawing.Size(222, 46);
             this.button1.TabIndex = 4;
             this.button1.Text = "Compute";
             this.button1.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             // rtbTotal
             // 
             this.rtbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbTotal.Location = new System.Drawing.Point(22, 315);
+            this.rtbTotal.Location = new System.Drawing.Point(579, 170);
             this.rtbTotal.Name = "rtbTotal";
             this.rtbTotal.Size = new System.Drawing.Size(430, 96);
             this.rtbTotal.TabIndex = 5;
@@ -102,7 +102,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(491, 505);
+            this.ClientSize = new System.Drawing.Size(1201, 505);
             this.Controls.Add(this.rtbTotal);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbOperation);
